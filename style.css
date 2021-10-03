@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "FontOfKindness-Regular";
+  src: local("FontOfKindness-Regular"),
+  url("fonts/FontOfKindness-Regular.woff") format('woff'),
+       url("fonts/FontOfKindness-Regular.otf") format('otf');
+  }
+
+@font-face {
+  font-family: "FontOfKindness-Bold";
+  src: local("FontOfKindness-Bold"),
+  url("fonts/FontOfKindness-Bold.woff") format('woff'),
+       url("fonts/FontOfKindness-Bold.otf") format('otf');
+  }
+
+ 
+.masthead {
+    position: relative;
+    background-color: #0E456F;
+    background-size: cover;
+    z-index: 0
+}
+
+
+#h1-kind {
+    color: white;
+    font-family: 'FontOfKindness-Bold' !important;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    z-index: 1;
+    letter-spacing: .05rem;
+}
+
+#h2-kind {
+    color: white;
+    font-family: 'FontOfKindness-Regular' !important;
+    z-index: 1;
+    font-size: 1.5rem
+}
+
+.masthead a {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: underline;
+    z-index: 1
+}
+
+.masthead a:hover {
+    color: #fff
+}
+
+.masthead a:active {
+    text-decoration: none
+}
+
+@media(min-width:992px) {
+    #h1-kind {
+        font-size: 1.8rem;
+        letter-spacing: .05rem;
+    }
+    #h2-kind {
+        font-size: 1.5rem
+    }
+}
+
+.masthead .masthead-cards {
+    position: relative;
+    z-index: 1
+}
+
+
+.masthead .masthead-cards .card {
+    opacity: 1;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    font-family: 'FontOfKindness-Bold' !important;
+    color: #363636;
+    transition: .15s all
+}
+
+.masthead .masthead-cards .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem
+}
+
+.masthead .masthead-cards .card:active {
+    margin-top: inherit;
+    margin-bottom: inherit
+}
+
+
+@media(min-width:992px) {
+    #h1-kind {
+        font-size: 1.8rem
+    }
+}
+
